@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package standard;
+
+// 状态
+enum State {
+  UNKNOWN         = 0 ; // 未知
+  SUCCESS         = 1 ; // 成功
+  FAILURE         = 2 ; // 失败
+  REPEAT          = 3 ; // 重复
+  CANCEL          = 4 ; // 取消
+  WAITING         = 5 ; // 等待
+  PROCEEDING      = 6 ; // 处理中
+  NOT_EXIST       = 7 ; // 不存在
+  UNDEFINED       = 8 ; // 未定义
+  PROHIBITED      = 9 ; // 被禁止
+  PARAMS_INVALID  = 10 ;   // 参数不合法
+  CHANNEL_INVALID = 11 ; // 无效的 Channel
+  DIAL_DB_FATLURE = 12 ; // DB 连接失败
+  DB_OPERATION_FATLURE = 13 ; // 数据库操作失败
+}
+
+service warrant {
+
+}
